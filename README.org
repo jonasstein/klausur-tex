@@ -1,1 +1,4 @@
-* Klausuren mit LaTeX setzen
+* Klausuren mit LaTeX unter Linux setzen
+- eine Vorlage für Lehrer
+
+ 
