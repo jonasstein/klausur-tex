@@ -1,0 +1,84 @@
+\documentclass[a4paper,12pt,headtopline,headsepline,headinclude,footinclude]{scrreprt}
+
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lastpage}
+\usepackage{tabularx}
+\usepackage{scrpage2}
+\usepackage[]{graphicx}
+\usepackage{paralist}
+\usepackage[babel,german=quotes]{csquotes}
+
+\newcommand{\Aufg}[3]{% Nr. Punkte 
+            \vspace{5mm} \textbf{Aufgabe #1  \hfill (#2 Punkte)} }
+
+
+\pagestyle{scrheadings}
+\newcommand{\Thema}{Ganzrationale Funktionen}
+\newcommand{\Datum}{11. Januar 2014}
+\newcommand{\Kurs}{Mathematik GK\,12}
+\newcommand{\Klausurnummer}{2. Klausur}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\lehead{Name:}
+\lohead{Name:\\ \Kurs}
+\rehead{\Klausurnummer \\ \Datum }
+\rohead{\Klausurnummer \\ \Datum }
+
+\cohead{\Thema}
+\cefoot{Seite \thepage/\pageref{LastPage}}
+\cofoot{Seite \thepage/\pageref{LastPage}}
+
+\Aufg{1)}{6, 7}\\
+\begin{enumerate}[a)]
+\item Gegeben sind die drei Punkte $A(1|1)$, $B(-4|5)$ und $C(3|6\frac{3}{4})$. Durch die drei 
+Punkte soll eine Parabel verlaufen.
+
+Schreiben Sie den Ansatz auf, mit dem sich die Parabelgleichung bestimmen lässt und erläuteren Sie ihn.
+\item Bestimmen Sie die Lösungsmenge des angegebenen lineare Gleichungssystems mit Hilfe des 
+Gaußschen Eliminationsverfahrens:
+
+$\begin{vmatrix} 3x-y+4z=12 \\ x-y+z=4 \\ 2x-8y+10z=30 \end{vmatrix}$
+\end{enumerate}
+
+\Aufg{2)}{6, 6, 6}\\
+%\Aufg{Eigenschaften ganzrationaler Funktionen bestimmen}{7, 7, 7 Punkte}
+
+Gegeben sind die folgenden ganzrationalen Funktionen.
+
+Zeigen Sie jeweils, dass es sich tatsächlich um ganzrationale Funktionen handelt und 
+
+geben Sie jeweils die Symmetrie und den Globalverlauf an. Begründen Sie Ihre Angaben.
+\begin{enumerate}[a)]
+ \item $f(x)= \frac{3x^5-18x^3-21x}{3}$
+ \item $g(x)= (x+7)^3$
+ \item $h(x)= \frac{-5x^8+0,5x^4-8x^2}{x^2}$
+\end{enumerate}
+
+\Aufg{3)}{8, 3}\\
+\begin{enumerate}[a)]
+ \item Gegeben sind die folgenden ganzrationalen Funktionen. Bestimmen Sie jeweils die Nullstellen.
+  \begin{enumerate}[1.]
+   \item $f(x)= \frac{5x^3-5x^2-10x}{5}$
+   \item $g(x)= x(x+5)(x-4)(x+0,5)$
+  \end{enumerate}
+ \item Geben Sie an, welche der drei Aussagen richtig ist und begründen Sie Ihre Entscheidung.
+
+Geben Sie auch Gegenbeispiele gegen die falschen Aussagen an.
+ \begin{enumerate}[1.]
+  \item Sarah:  \enquote{Eine ganzrationale Funktion vom Grad n hat höchstens n Nullstellen.}
+  \item Julian: \enquote{Eine ganzrationale Funktion vom Grad n hat genau n Nullstellen.}
+ \end{enumerate}
+
+\end{enumerate}
+
+
+
+{\bigskip Viel Erfolg!}
+
+
+\end{document}
