@@ -1,1 +1,4 @@
 auto/*
+*.aux
+*.pdf
+*.log
