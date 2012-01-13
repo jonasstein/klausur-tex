@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,headtopline,headsepline,headinclude,footinclude]{scrreprt}
+\documentclass[a4paper,11pt,headsepline,headinclude]{scrreprt}
 
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
@@ -10,18 +10,19 @@
 \usepackage[]{graphicx}
 \usepackage{paralist}
 \usepackage[babel,german=quotes]{csquotes}
-
+\usepackage{geometry}
 \newcommand{\Aufg}[3]{% Nr. Punkte 
             \vspace{5mm} \textbf{Aufgabe #1  \hfill (#2 Punkte)} }
 
+\geometry{a4paper, portrait, inner=2.5cm, outer=2cm, top=2.5cm, bottom=2cm}
 
 \pagestyle{scrheadings}
 \newcommand{\Thema}{Ganzrationale Funktionen}
 \newcommand{\Datum}{11. Januar 2014}
 \newcommand{\Kurs}{Mathematik GK\,12}
-\newcommand{\Klausurnummer}{2. Klausur}
+\newcommand{\Klausurnummer}{2. Klausur, Seite \thepage/\pageref{LastPage}}
 
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt} % Absatzeinrückung von Links
 
 \begin{document}
 \lehead{Name:}
@@ -30,8 +31,8 @@
 \rohead{\Klausurnummer \\ \Datum }
 
 \cohead{\Thema}
-\cefoot{Seite \thepage/\pageref{LastPage}}
-\cofoot{Seite \thepage/\pageref{LastPage}}
+%\cefoot{Seite \thepage/\pageref{LastPage}}
+%\cofoot{Seite \thepage/\pageref{LastPage}}
 
 \Aufg{1)}{6, 7}\\
 \begin{enumerate}[a)]
@@ -78,7 +79,7 @@ Geben Sie auch Gegenbeispiele gegen die falschen Aussagen an.
 
 
 
-{\bigskip Viel Erfolg!}
+{\bigskip {\Huge Viel Erfolg!}}
 
 
 \end{document}
