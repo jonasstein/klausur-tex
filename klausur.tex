@@ -1,6 +1,4 @@
-\documentclass[a4paper,11pt, headsepline,headinclude, pagenumber=no]{scrreprt}
-
-% pagenumber=no => keine Seitenzahl in der Fußzeile - wir haben ja eine in der Kopfzeile
+\documentclass[a4paper,11pt, headsepline,headinclude]{scrreprt}
 
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
@@ -31,6 +29,11 @@
 \lohead{Name:\\ \Kurs}
 \rehead{\Klausurnummer \\ \Datum }
 \rohead{\Klausurnummer \\ \Datum }
+
+\cfoot{} 
+% leere Fußzeile, damit keine Seitenzahl in der Fußzeile erscheint. 
+% Wir haben ja eine in der Kopfzeile
+
 
 \cohead{\Thema}
 %\cefoot{Seite \thepage/\pageref{LastPage}}

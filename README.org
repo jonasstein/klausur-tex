@@ -6,3 +6,7 @@
 
 * Interessante Informationsquellen zum Thema
  - exam, ein LaTeX Paket zum setzen von Prüfungsbögen
+
+
+* Dank für Tipps, Korrekturen, Mitwirken an
+ - Axel Berger
