@@ -48,8 +48,8 @@
 % Nummer selbst angeben, aber keine Anzeige von Punkten 
 \newcommand{\AufgabeNr}[1]{\vspace{5mm} \textbf{#1)} }
 
-% Nummer automatisch, aber keine Anzeige von Punkten 
-\newcommand{\Aufgabe}[1]{%
+% Nummer automatisch und keine Anzeige von Punkten 
+\newcommand{\Aufgabe}{%
 \AufgabeNr{Aufgabe \theAufgabenCounter}%
 \stepcounter{AufgabenCounter}}
 
@@ -74,7 +74,7 @@
 \cohead{\large{\Thema}}
 
 
-\Aufgabe{6, 7}
+\AufgabePkt{6, 7}
 \begin{enumerate}[a)]
 \item Gegeben sind die drei Punkte $A(1|1)$, $B(-4|5)$ und $C(3|6\frac{3}{4})$. Durch die drei 
 Punkte soll eine Parabel verlaufen.
@@ -86,7 +86,7 @@ Gaußschen Eliminationsverfahrens:
 $\begin{vmatrix} 3x-y+4z=12 \\ x-y+z=4 \\ 2x-8y+10z=30 \end{vmatrix}$
 \end{enumerate}
 
-\Aufgabe{6, 6, 6}
+\Aufgabe
 
 Gegeben sind die folgenden ganzrationalen Funktionen.
 
