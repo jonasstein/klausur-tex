@@ -11,17 +11,19 @@
 \usepackage{paralist}
 \usepackage[babel,german=quotes]{csquotes}
 \usepackage{geometry}
-\newcommand{\Aufg}[3]{% Nr. Punkte 
-            \vspace{5mm} \textbf{Aufgabe #1  \hfill (#2 Punkte)} }
+
+
 
 \geometry{a4paper, portrait, inner=2.5cm, outer=2cm, top=2.5cm, bottom=2cm}
+
+\newcounter{AufgabenCounter}
+\setcounter{AufgabenCounter}{1}
 
 \newcounter{Gruppenwahl}
 
 % Jeweils eine der folgenden Zeilen auskommentieren:
 \setcounter{Gruppenwahl}{1}  % Gruppe A
 %\setcounter{Gruppenwahl}{2}  % Gruppe B
-
 
 \newcommand{\AB}[2]%
 {%
@@ -39,6 +41,15 @@
 \newcommand{\Gruppe}{Gruppe \Alph{Gruppenwahl}}
 \newcommand{\Seite}{Seite \thepage/\pageref{LastPage}}
 
+
+\newcommand{\AufgabeNr}[2]{% Nr. Punkte 
+            \vspace{5mm} \textbf{#1 \hfill (#2 Punkte)} }
+
+\newcommand{\Aufgabe}[1]{%
+\AufgabeNr{Aufgabe \theAufgabenCounter)}{#1}%
+\stepcounter{AufgabenCounter}}
+
+
 \setlength{\parindent}{0pt} % Absatzeinrückung von Links
 
 \begin{document}
@@ -54,20 +65,19 @@
 \cohead{\large{\Thema}}
 
 
-\Aufg{1)}{6, 7}\\
+\Aufgabe{6, 7}
 \begin{enumerate}[a)]
 \item Gegeben sind die drei Punkte $A(1|1)$, $B(-4|5)$ und $C(3|6\frac{3}{4})$. Durch die drei 
 Punkte soll eine Parabel verlaufen.
 
-Schreiben Sie den Ansatz auf, mit dem sich die Parabelgleichung bestimmen lässt und erläuteren Sie ihn.
+Schreiben Sie den Ansatz auf, mit dem sich die Parabelgleichung bestimmen lässt.
 \item Bestimmen Sie die Lösungsmenge des angegebenen lineare Gleichungssystems mit Hilfe des 
 Gaußschen Eliminationsverfahrens:
 
 $\begin{vmatrix} 3x-y+4z=12 \\ x-y+z=4 \\ 2x-8y+10z=30 \end{vmatrix}$
 \end{enumerate}
 
-\Aufg{2)}{6, 6, 6}\\
-%\Aufg{Eigenschaften ganzrationaler Funktionen bestimmen}{7, 7, 7 Punkte}
+\Aufgabe{6, 6, 6}
 
 Gegeben sind die folgenden ganzrationalen Funktionen.
 
@@ -80,7 +90,7 @@ geben Sie jeweils die Symmetrie und den Globalverlauf an. Begründen Sie Ihre An
  \item $h(x)= \frac{-5x^8+0,5x^4-8x^2}{x^2}$
 \end{enumerate}
 
-\Aufg{3)}{8, 3}\\
+\AufgabeNr{Bonusaufgabe)}{8, 3}
 \begin{enumerate}[a)]
  \item Gegeben sind die folgenden ganzrationalen Funktionen. Bestimmen Sie jeweils die Nullstellen.
   \begin{enumerate}[1.]
@@ -99,7 +109,7 @@ Geben Sie auch Gegenbeispiele gegen die falschen Aussagen an.
 
 
 
-{\bigskip {\large \textit{Viel Erfolg!}}}
+{\bigskip {\large \textsl{Viel Erfolg!}}}
 
 
 \end{document}
