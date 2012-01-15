@@ -42,11 +42,20 @@
 \newcommand{\Seite}{Seite \thepage/\pageref{LastPage}}
 
 
-\newcommand{\AufgabeNr}[2]{% Nr. Punkte 
-            \vspace{5mm} \textbf{#1 \hfill (#2 Punkte)} }
+% Nummer und Punkte selbst angeben
+\newcommand{\AufgabeNrPkt}[2]{\vspace{5mm} \textbf{#1) \hfill (#2 Punkte)} }
 
+% Nummer selbst angeben, aber keine Anzeige von Punkten 
+\newcommand{\AufgabeNr}[1]{\vspace{5mm} \textbf{#1)} }
+
+% Nummer automatisch, aber keine Anzeige von Punkten 
 \newcommand{\Aufgabe}[1]{%
-\AufgabeNr{Aufgabe \theAufgabenCounter)}{#1}%
+\AufgabeNr{Aufgabe \theAufgabenCounter}%
+\stepcounter{AufgabenCounter}}
+
+% Nummer automatisch, Anzeige von Punkten 
+\newcommand{\AufgabePkt}[1]{%
+\AufgabeNrPkt{Aufgabe \theAufgabenCounter}{#1}%
 \stepcounter{AufgabenCounter}}
 
 
@@ -90,7 +99,7 @@ geben Sie jeweils die Symmetrie und den Globalverlauf an. Begründen Sie Ihre An
  \item $h(x)= \frac{-5x^8+0,5x^4-8x^2}{x^2}$
 \end{enumerate}
 
-\AufgabeNr{Bonusaufgabe)}{8, 3}
+\AufgabeNrPkt{Bonusaufgabe}{8, 3}
 \begin{enumerate}[a)]
  \item Gegeben sind die folgenden ganzrationalen Funktionen. Bestimmen Sie jeweils die Nullstellen.
   \begin{enumerate}[1.]
